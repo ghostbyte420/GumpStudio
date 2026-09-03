@@ -1,0 +1,96 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net10.0-windows</TargetFramework>
+		<RootNamespace>GumpStudio</RootNamespace>
+		<UseWindowsForms>true</UseWindowsForms>
+		<NoWarn>$(NoWarn);SYSLIB0011</NoWarn>
+		<EnableUnsafeBinaryFormatterSerialization>true</EnableUnsafeBinaryFormatterSerialization>
+		<AssemblyTitle>Gump Studio.NET</AssemblyTitle>
+		<Company>Bradley Uffner</Company>
+		<Product>Gump Studio.NET</Product>
+		<Description>Gump Studio</Description>
+		<Deterministic>false</Deterministic>
+		<Copyright>January 2008</Copyright>
+		<AssemblyVersion>2.0.0</AssemblyVersion>
+		<FileVersion>2.0.0</FileVersion>
+		<Version>2.0.0.0</Version>
+		<ApplicationIcon>Resources\Icon.ico</ApplicationIcon>
+		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<OutputPath>..\Build\</OutputPath>
+		<StartupObject>GumpStudio.GumpDesignerMain</StartupObject>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+	  <PlatformTarget>AnyCPU</PlatformTarget>
+	  <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+	  <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+	  <PlatformTarget>AnyCPU</PlatformTarget>
+	  <DefineConstants>DEBUG;TRACE</DefineConstants>
+	</PropertyGroup>
+	<ItemGroup>
+		<Content Include="Resources\Icon.ico">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+	<ItemGroup>
+		<Reference Include="UOFont">
+			<HintPath>Resources\UOFont.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\Ultima\Ultima.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Update="Forms\GumpArtBrowser.Designer.cs">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>GumpArtBrowser.resx</DependentUpon>
+		</Compile>
+		<Compile Update="Properties\Resources.Designer.cs">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Resources.resx</DependentUpon>
+		</Compile>
+		<Compile Update="HuePickerControl.cs" />
+		<Compile Update="FontBrowser.cs">
+			<SubType>UserControl</SubType>
+		</Compile>
+		<Compile Update="Forms\LargeTextEditor.cs" />
+		<Compile Update="Forms\StaticArtBrowser.cs">
+			<SubType>Form</SubType>
+		</Compile>
+		<Compile Update="Forms\DesignerForm.cs" />
+		<Compile Update="Forms\Settings.cs">
+			<SubType>Form</SubType>
+		</Compile>
+		<Compile Update="Forms\GumpArtBrowser.cs" />
+		<Compile Update="Forms\PluginManager.cs" />
+		<Compile Update="Forms\SplashBox.cs">
+			<SubType>Form</SubType>
+		</Compile>
+		<Compile Update="Forms\AboutBox.cs" />
+		<Compile Update="Forms\ClilocBrowser.cs" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="README.md">
+			<Generator>TextTemplatingFileGenerator</Generator>
+			<LastGenOutput>README.cs</LastGenOutput>
+		</None>
+	</ItemGroup>
+	<ItemGroup>
+		<EmbeddedResource Update="Forms\GumpArtBrowser.resx">
+			<Generator>PublicResXFileCodeGenerator</Generator>
+			<LastGenOutput>GumpArtBrowser.Designer.cs</LastGenOutput>
+		</EmbeddedResource>
+		<EmbeddedResource Update="Properties\Resources.resx">
+			<Generator>PublicResXFileCodeGenerator</Generator>
+			<LastGenOutput>Resources.Designer.cs</LastGenOutput>
+		</EmbeddedResource>
+	</ItemGroup>
+	<ItemGroup>
+	  <PackageReference Include="System.Runtime.Serialization.Formatters" Version="10.0.11" />
+	</ItemGroup>
+</Project>

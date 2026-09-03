@@ -1,0 +1,51 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.9.12112.369
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Plugins", "Plugins", "{C8217AC5-135D-40A9-A2E6-7DC00BC26147}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GumpStudio", "GumpStudio\Application\GumpStudio.csproj", "{07B55C55-7C0F-773E-C694-78144ABB8164}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ultima", "GumpStudio\Ultima\Ultima.csproj", "{8058440E-2EC7-65C5-FB16-8CFD682248F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpExport", "GumpStudio\Plugins\CSharpExport\CSharpExport.csproj", "{0DA609C1-2FC9-68F8-D4A6-8246012AC713}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnapToGrid", "GumpStudio\Plugins\SnapToGrid\SnapToGrid.csproj", "{0C6084BD-55F4-434F-AB06-93EBDE51DECF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{07B55C55-7C0F-773E-C694-78144ABB8164}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07B55C55-7C0F-773E-C694-78144ABB8164}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07B55C55-7C0F-773E-C694-78144ABB8164}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07B55C55-7C0F-773E-C694-78144ABB8164}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8058440E-2EC7-65C5-FB16-8CFD682248F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8058440E-2EC7-65C5-FB16-8CFD682248F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8058440E-2EC7-65C5-FB16-8CFD682248F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8058440E-2EC7-65C5-FB16-8CFD682248F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DA609C1-2FC9-68F8-D4A6-8246012AC713}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DA609C1-2FC9-68F8-D4A6-8246012AC713}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DA609C1-2FC9-68F8-D4A6-8246012AC713}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DA609C1-2FC9-68F8-D4A6-8246012AC713}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C6084BD-55F4-434F-AB06-93EBDE51DECF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C6084BD-55F4-434F-AB06-93EBDE51DECF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C6084BD-55F4-434F-AB06-93EBDE51DECF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C6084BD-55F4-434F-AB06-93EBDE51DECF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0DA609C1-2FC9-68F8-D4A6-8246012AC713} = {C8217AC5-135D-40A9-A2E6-7DC00BC26147}
+		{0C6084BD-55F4-434F-AB06-93EBDE51DECF} = {C8217AC5-135D-40A9-A2E6-7DC00BC26147}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E06BED54-0FB4-4BBB-927F-16719AB26954}
+	EndGlobalSection
+EndGlobal
