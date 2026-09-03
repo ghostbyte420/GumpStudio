@@ -1,4 +1,4 @@
-### 🤝 CodeAssist Credits:
+### 🤝 GumpStudio Credits:
 ---
 ```Developer(s)```
 - Bradley Uffner
