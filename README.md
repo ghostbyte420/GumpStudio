@@ -3,7 +3,8 @@
 
 ---
 This software allows users to pick from any static art and gump image to create in-game pop-up windows for their players! They can then 
-output their gump code and attach it to things like items and sprites on the server(s) they are building.
+output their gump code and attach it to things like items and sprites on the server(s) they are building. This is great when users want
+to add a unique experience for their players.
 
 ---
 
